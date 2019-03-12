@@ -1,4 +1,4 @@
-
+@import 'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css';
 body {
 	height: 100%;
 	display: block;
@@ -64,7 +64,6 @@ header nav a {
 	margin: auto;
 }
 
-
 footer {
 	position: absolute;
 	display: block;
@@ -100,66 +99,37 @@ footer li {
 	margin-right: 20px;
 }
 
-
-.btn {
-	height: 36px;
-  line-height: 27px;
-	background-color: #f2f2f2;
-	cursor: pointer;
-  font-family: arial,sans-serif;
-  font-size: 14px;
-  margin: 11px 5px;
-  min-width: 54px;
-  padding: 0 16px;
-  text-align: center;
-  border: 1px solid #f2f2f2;
-  color: #5F6368;
-  border-radius: 4px;
+.fa-search {
+    margin-left: 15px;
+    margin-right: 5px;
+    color: rgb(82, 143, 245);
+		position: absolute;
+		left: 8px;
+		padding: 8px;
+		top: 7px;
 }
 
+.fa-microphone {
+		color: rgb(66, 133, 244);
+		position: absolute;
+		right: 19px;
+		top: 6px;
+		padding: 8px;
+}
+.fa-keyboard {
+		color: rgb(123, 123, 123);
+		position: absolute;
+		right: 55px;
+		top: 6px;
+		padding: 8px;
+}
 a {
 	color: #404040;
 	text-decoration: none;
 }
-
 a:hover{
 	text-decoration: underline;
 }
-
-
-.apps {
-	position: relative;
-	display: block;
-	background: url('../img/apps-nav.png');
-	background-position: 30px -52px;
-	width: 30px;
-	height: 30px;
-	float: right;
-	opacity: .55;
-	margin: 0;
-	padding: 0;
-	top: 11px;
-}
-
-.apps:hover {
-	opacity: 1;
-	cursor: default;
-}
-
-.apps-ico:hover {
-	color: #000;
-}
-
-.tg-arrow {
-  position: relative;
-  border-top: 4px solid #404040;
-  border-left: 4px dashed transparent;
-  border-right: 4px dashed transparent;
-  display: inline-block;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
 
 .g-search {
 	position: relative;
@@ -185,7 +155,7 @@ a:hover{
 	color: #222;
 	font-size: small;
 	border: none;
-  padding-left: 7px;
+  padding-left: 67px;
 	padding-right: 85px;
   margin: 0;
   width: 100%;
@@ -202,40 +172,16 @@ a:hover{
   line-height: 1.2em;
   box-sizing: border-box;
 }
-
-
-.mic img {
-	position: absolute;
-	right: 19px;
-	top: 6px;
-	display: block;
-	float: right;
-	width: 20px;
-	height: 20px;
-	padding: 5px;
-	margin: 0;
-	vertical-align: middle;
-  opacity: 5;
+.zad1-MainNavigation-button.mdc-button.mdc-button--unelevated {
+    margin: 8px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(108, 110, 110);
+    text-transform: initial;
+    font-family: arial, sans-serif;
+    letter-spacing: normal;
 }
 
-.v_search:hover {
-	cursor: pointer;
-}
-
-.v_search_2:hover {
-	cursor: pointer;
-}
-
-.keyboard img {
-	position: absolute;
-	right: 55px;
-	top: 6px;
-	display: block;
-	float: right;
-	width: 20px;
-	height: 20px;
-	padding: 5px;
-	margin: 0;
-	vertical-align: middle;
-  opacity: 5;
+.zad1-MainNavigation-button.mdc-button.mdc-button--unelevated:hover {
+    border: 1px rgb(108, 110, 110) solid;
+    color: black;
 }

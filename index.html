@@ -6,6 +6,8 @@
 	<link rel="icon" href="img/glogo.png" type="image/x-icon">
 	<title>Google</title>
 	<link rel="stylesheet" href="./css/google.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 	<header>
@@ -13,14 +15,12 @@
 			<ul>
 				<li><a href="#">Gmail</a></li>
 				<li><a href="#">Grafika</a></li>
-				<li><a href="#" class="apps"></a></li>
+				<li><a href="#"><i class="fas fa-th"></i></a></li>
 				<li><a href="" class="menu"><img src="img/bell.png" /></a></li>
 				<li><a href="" class="menu"><img src="img/wojtek.png"/></a></li>
-
 			</ul>
 		</nav>
 	</header>
-
 	<div class="container">
 		<center>
 			<div class="logo">
@@ -30,17 +30,13 @@
 			<form name="search">
 				<div class="g-search">
 					<input class="search-input" type="text" text="" >
-					<div class="mic">
-						<img class="v_search" alt="voice search" src="img/mic.png" />
-					</div>
-					<div class="keyboard">
-						<img class="v_search_v2" alt="keyboard" src="img/graphic.png" />
-					</div>
-
+					<i class="fas fa-search"></i>
+					<i class="fas fa-microphone"></i>
+					<i class="fas fa-keyboard"></i>
 				</div>
-				<div class="buttons">
-					<input class="btn" type="submit" value="Szukaj w Google">
-					<input class="btn" type="submit" value="Szczęśliwy traf">
+				<div class="MainNavigation">
+					<button class="zad1-MainNavigation-button mdc-button mdc-button--unelevated">Szukaj w Google</button>
+					<button class="zad1-MainNavigation-button mdc-button mdc-button--unelevated">Szczęśliwy traf</button>
 				</div>
 			</form>
 		</center>
@@ -61,5 +57,8 @@
 			</ul>
 		</nav>
 	</footer>
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
+			mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+	</script>
 </body>
 </html>
