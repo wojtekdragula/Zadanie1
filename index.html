@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="./css/google.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 </head>
 <body>
 	<header>
@@ -21,6 +23,9 @@
 			</ul>
 		</nav>
 	</header>
+
+
+
 	<div class="container">
 		<center>
 			<div class="logo">
@@ -29,7 +34,11 @@
 
 			<form name="search">
 				<div class="g-search">
-					<input class="search-input" type="text" text="" >
+					<div id="app">
+					<div class="container-item">
+					 <autocomplete/>
+					</div>
+					</div>
 					<i class="fas fa-search"></i>
 					<i class="fas fa-microphone"></i>
 					<i class="fas fa-keyboard"></i>
@@ -57,8 +66,36 @@
 			</ul>
 		</nav>
 	</footer>
+
+	<script type="text/x-template" id="autocomplete-tpl">
+<div class="autocomplete">
+	<label :for="id">{{label}}</label>
+	<textarea v-if="textarea" :id="id" :rows="rows" :cols="cols" class="autocomplete-input" :placeholder="placeholder" @focusout="focusout" @focus="focus" @keydown.13="chooseItem" @keydown.tab="chooseItem" @keydown.40="moveDown" @keydown.38="moveUp" v-model="inputValue"
+		type="text"></textarea>
+	<input v-else :id="id" class="autocomplete-input" :placeholder="placeholder" @focusout="focusout" @focus="focus" @keydown.13="chooseItem" @keydown.tab="chooseItem" @keydown.40="moveDown" @keydown.38="moveUp" v-model="inputValue" type="text">
+
+
+	<ul :class="{
+		'autocomplete-list': true,
+		[id+'-list']: true
+	}" v-if="searchMatch.length > 0">
+		<li :class="{active: selectedIndex === index}" v-for="(result, index) in searchMatch" @click="selectItem(index), chooseItem()" v-html="highlightWord(result)">
+
+		</li>
+	</ul>
+</div>
+</script>
+
 	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
 			mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
 	</script>
+	<script src="animals.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="skrypt.js"></script>
+
+
+
+
+
 </body>
 </html>

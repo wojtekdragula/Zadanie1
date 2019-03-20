@@ -10,7 +10,7 @@ body {
 	margin: 0;
 }
 
-li {
+.head_menu li {
 	list-style-type: none;
 	display: inline-block;
 	padding-left: 23px;
@@ -43,6 +43,10 @@ header li {
 	margin-top: 1px;
 	margin-right: -12px;
 	padding-right: 1px;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 23px;
+	padding-top: 0;
 }
 
 .head_menu {
@@ -81,6 +85,10 @@ footer a {
 
 footer li {
 	margin-right: 4px;
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 23px;
+	padding-top: 0;
 }
 
 .l_footer, .r_footer {
@@ -146,7 +154,7 @@ a:hover{
 	border-radius: 30px;
 }
 
-.g-search input[text] {
+.autocomplete-input {
 	outline: none;
   display: block;
   position: relative;
@@ -172,6 +180,28 @@ a:hover{
   line-height: 1.2em;
   box-sizing: border-box;
 }
+.autocomplete li{
+            list-style-type:none;
+        }
+        .autocomplete li:hover{
+            background-color:#EEEEEE;
+        }
+        .autocomplete ul{
+            border-style:groove;
+            border-radius: 25px;
+            max-height: 150px;
+            overflow:hidden;
+            overflow-y: scroll;
+						z-index: 10;
+						position: absolute;
+						width: 70%;
+						background: white;
+
+
+        }
+
+
+
 .zad1-MainNavigation-button.mdc-button.mdc-button--unelevated {
     margin: 8px;
     background-color: rgb(244, 244, 244);
@@ -179,6 +209,7 @@ a:hover{
     text-transform: initial;
     font-family: arial, sans-serif;
     letter-spacing: normal;
+		position: relative;
 }
 
 .zad1-MainNavigation-button.mdc-button.mdc-button--unelevated:hover {
