@@ -154,7 +154,7 @@ a:hover{
 	border-radius: 30px;
 }
 
-.autocomplete-input {
+.g-search input {
 	outline: none;
   display: block;
   position: relative;
@@ -170,7 +170,7 @@ a:hover{
   height: 45px;
   z-index:6;
   left: 0;
-  background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;
+  background: transparent;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -180,27 +180,6 @@ a:hover{
   line-height: 1.2em;
   box-sizing: border-box;
 }
-.autocomplete li{
-            list-style-type:none;
-        }
-        .autocomplete li:hover{
-            background-color:#EEEEEE;
-        }
-        .autocomplete ul{
-            border-style:groove;
-            border-radius: 25px;
-            max-height: 150px;
-            overflow:hidden;
-            overflow-y: scroll;
-						z-index: 10;
-						position: absolute;
-						width: 70%;
-						background: white;
-
-
-        }
-
-
 
 .zad1-MainNavigation-button.mdc-button.mdc-button--unelevated {
     margin: 8px;
